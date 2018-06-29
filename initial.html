@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Train Time</title>
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  
+</head>
+
+<body background="">
+  
+  <div class="container">
+    
+    
+    <div style="background-color:LightGray" class="jumbotron">
+      <h1 class="text-center">🚂 You-Know-What-Time-It-Is..</h1>
+    </div>
+    
+   <div style="background-color:LightGray" class="container">
+  <h2 align="center">Current Train Schedule</h2>           
+  <table id="trainTable" style="background-color:White" class="table">
+    <thead>
+      <tr>
+        <th id="trnName">Train Name</th>
+        <th id="destination">Destination</th>
+        <th id="arvlFrequency">Arrival Frequency</th>
+        <th id="nxtArrival">Next Arrival<th>
+        <th id="minAway">Minutes Away<th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="trnName">Filler</td>
+        <td id="destination">Filler</td>
+        <td id="arvlFrequency">Filler</td>
+        <td id="nextArrival">Filler</td>
+        <td>      </td>
+        <td id=minAway">Filler</td>
+      </tr>
+      <tr>
+        <td id="trnName">Filler</td>
+        <td id="destination">Filler</td>
+        <td id="arvlFrequency">Filler</td>
+        <td id="nextArrival">Filler</td>
+        <td>      </td>
+        <td id=minAway">Filler</td>
+      </tr>
+      <tr>
+        <td id="trnName">Filler</td>
+        <td id="destination">Filler</td>
+        <td id="arvlFrequency">Filler</td>
+        <td id="nextArrival">Filler</td>
+        <td>      </td>
+        <td id=minAway">Filler</td>
+      </tr>
+
+    </tbody>
+   </table>
+  </div>
+
+      <br><br>
+
+      <!-- Submission Card-->
+      <div class="col-lg-12">
+        <div style="background-color:LightGray" class="card">
+          <div class="card-heading">
+            <h3 align="center" class="card-title">Add Train to the Train Time Board</h3>
+          </div>
+          
+          <div class="card-body">
+            
+            <!-- Sign-up Form (note the various input "types")-->
+            <form role="form">
+              <div class="form-group row">
+                <label for="name-input">Train Name:</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="email-input">Destination</label>
+                <input class="form-control" id="email-input" type="email">
+              </div>
+              <div class="form-group row">
+                <label for="age-input">Initial Arrivial Time (HH:mm - Military Time)</label>
+                <input class="form-control" id="age-input" type="number">
+              </div>
+              <div class="form-group row">
+                <label for="age-input">Frequency (min)</label>
+                <input class="form-control" id="age-input" type="number">
+              </div>
+              <button class="btn btn-default" id="add-user" style="color:Orange;" submit">Submit</button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+      
+</body> 
+  
+ <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD3VNaNKS_Xv4EZG8D2CFxOqIuNczuVzkA",
+        authDomain: "train-time-9d9a3.firebaseapp.com",
+        databaseURL: "https://train-time-9d9a3.firebaseio.com",
+        projectId: "train-time-9d9a3",
+        storageBucket: "train-time-9d9a3.appspot.com",
+        messagingSenderId: "573530013083"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  
+  <!-- Script -->
+  <script>
+    
+    </body>
+    </html>
